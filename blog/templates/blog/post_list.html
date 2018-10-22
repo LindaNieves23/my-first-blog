@@ -7,14 +7,17 @@
 	<div>
 		<h1>Avivamiento MJ</h1>
 	</div>
-
+{%for post in posts %}
 
 	<div>
-		<h2>Estas en nuestra pagina!!!</h2>
-		<h3>Te invitamos a seguirnos </h3>
-		<em>Que gusto que estes aquì!</em>
+		<p>published. {{post.published_date}}</p>
+		<h1><a href="">{{ post.title }} </a></h1>
+		<p>{{ post.text|linebreaksbr}}</p>
+		{}
+		
 	</div>
-	
+{% endfor %}
+
 	
 </body>
 </html>
